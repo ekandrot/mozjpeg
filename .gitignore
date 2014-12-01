@@ -12,3 +12,6 @@ Makefile.in
 /config.sub
 /ltmain.sh
 /ar-lib
+/.DS_Store
+/build
+/test_images

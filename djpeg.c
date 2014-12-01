@@ -262,6 +262,8 @@ parse_switches (j_decompress_ptr cinfo, int argc, char **argv,
       }
       cinfo->err->trace_level++;
 
+    } else if (keymatch(arg, "deep", 4)) {
+      cinfo->err->trace_level += 2;
     } else if (keymatch(arg, "version", 4)) {
       fprintf(stderr, "%s version %s (build %s)\n",
               PACKAGE_NAME, VERSION, BUILD);
